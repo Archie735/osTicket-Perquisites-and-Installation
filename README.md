@@ -84,4 +84,83 @@ The username will be root. The password will be SunDown1
 
 <img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/b7f3547a-fa1a-408d-903d-7a401f87b12f width="50%" height="auto" alt="root password"/>
 
+<h2>8.Open IIS as an Admin and register PHP</h2>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/ad22e29a-cddd-46b3-a562-b939030ff6d4 width="50%" height="auto" alt="ISS Admin"/>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/6faea20b-4cb0-44e5-be43-f8eeaf39ca46 width="50%" height="auto" alt="register PHP"/>
+
+<h2>9. Download osTicket</h2>
+
+Extract and copy "upload" folder to c:\inetpub\wwwroot
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/746c46f2-53dd-41e3-803f-7f74bea4dafc width="50%" height="auto" alt="upload folder"/>
+
+Rename upload as "osTicket"
+
+<h2>10. Reload IIS (restart server)</h2>
+
+<h2>11. On IIS go to sites → Default → osTicket</h2>
+
+Click on "Browse *:80"
+
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/cf25e7bd-ce86-45cb-8925-a4c061f3c6f0 width="50%" height="auto" alt="Browse *:80"/>
+
+<h2>12. On IIS→ Sites→ Default Web Site→ osTicket→ PHP Manager, Enable these PHP Extensions</h2>
+
+      Enable: php_imap.dll
+      Enable: php_intl.dll
+      Enable: php_opcache.dll
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/d4b44fb9-159f-4e85-bf0c-559d0a219719 width="50%" height="auto" alt="php enable"/>
+
+
+Refresh osTicket Browser
+
+<h2>13. Rename: ost-sampleconfig.php to ost-config.php</h2>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/1fbc1948-c33b-4f7f-852a-e1c4390f9b82 width="50%" height="auto" alt="rename os-sampleconfig"/>
+
+Assign permission to everyone
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/5002b315-686d-4d9c-9391-1a4ca824de10 width="50%" height="auto" alt="allow permission"/>
+
+<h2>14. Click Continue on the osTicket browser and complete system settings and admin user</h2>
+
+Password is Summerfestival2
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/f33aa738-4a2c-47bb-8290-e4392614384d width="50%" height="auto" alt=" Sytem settings and Admin User"/>
+
+
+Download and install HediSQL
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/e2c37072-40c0-4149-98c5-ac904cfabada width="50%" height="auto" alt="install heidi"/>
+
+Make sure the check mark for launch is on then click finish. Add new and enter the password for root then click open.
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/87867d99-60cc-4416-84c0-c40c20e5c20e width="50%" height="auto" alt="Session manager heidi"/>
+
+<h2>15. Create a database on HeidiSQL named osTicket</h2>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/fede1a7a-0394-4b50-b2a7-b367c3031b34 width="50%" height="auto" alt="new database"/>
+
+<h2>16. Fill in the database, username, and password</h2>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/25e06fb7-fc61-4f2f-9d79-68dad0902634 width="50%" height="auto" alt="Database Settings"/>
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/1016bb85-479b-4e30-9680-ce68a4c81252 width="50%" height="auto" alt="osTicket installed"/>
+
+<h2>17. Tighten up</h2>
+
+Delete: C:\inetpub\wwwroot\osTicket\setup
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/7d5fc7a4-3950-4c32-a5a0-b945405ddd44 width="50%" height="auto" alt="delete setup"/>
+
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+<img src=https://github.com/Archie735/osTicket-Perquisites-and-Installation/assets/150314129/1b6c3e0c-8025-42f3-9e0b-479f053b3f65 width="50%" height="auto" alt="Read only permission"/>
+
+
+Now we are done installing osTicket :)
 
