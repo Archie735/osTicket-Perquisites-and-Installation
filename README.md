@@ -16,7 +16,7 @@ This walkthrough provides an overview of the prerequisites and installation step
 
 <h2>Operating Systems Used </h2>
 
-- Windows 11</b> (21H2)
+- Windows 11
 
 <h2>List of Prerequisites</h2>
 
